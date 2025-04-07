@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.apache.commons.mail.EmailTest" time="0.127" tests="42" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/test-classes:/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/classes:/Users/abrahamabdulkarim/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/Users/abrahamabdulkarim/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/abrahamabdulkarim/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/abrahamabdulkarim/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/abrahamabdulkarim/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/subethamail/subethasmtp/3.1.7/subethasmtp-3.1.7.jar:/Users/abrahamabdulkarim/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/abrahamabdulkarim/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-module-junit4/1.4.12/powermock-module-junit4-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-module-junit4-common/1.4.12/powermock-module-junit4-common-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-core/1.4.12/powermock-core-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/javassist/javassist/3.16.1-GA/javassist-3.16.1-GA.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-reflect/1.4.12/powermock-reflect-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-api-easymock/1.4.12/powermock-api-easymock-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-api-support/1.4.12/powermock-api-support-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/easymock/easymock/3.1/easymock-3.1.jar:/Users/abrahamabdulkarim/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/slf4j/slf4j-jdk14/1.6.1/slf4j-jdk14-1.6.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/surefire/surefirebooter-20250406224640598_3.jar /Users/abrahamabdulkarim/Documents/code/testci-common-email/target/surefire 2025-04-06T22-46-40_329-jvmRun1 surefire-20250406224640598_1tmp surefire_0-20250406224640598_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/test-classes:/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/classes:/Users/abrahamabdulkarim/.m2/repository/javax/mail/mail/1.4.5/mail-1.4.5.jar:/Users/abrahamabdulkarim/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/abrahamabdulkarim/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/abrahamabdulkarim/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/abrahamabdulkarim/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/subethamail/subethasmtp/3.1.7/subethasmtp-3.1.7.jar:/Users/abrahamabdulkarim/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/abrahamabdulkarim/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-module-junit4/1.4.12/powermock-module-junit4-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-module-junit4-common/1.4.12/powermock-module-junit4-common-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-core/1.4.12/powermock-core-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/javassist/javassist/3.16.1-GA/javassist-3.16.1-GA.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-reflect/1.4.12/powermock-reflect-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-api-easymock/1.4.12/powermock-api-easymock-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/powermock/powermock-api-support/1.4.12/powermock-api-support-1.4.12.jar:/Users/abrahamabdulkarim/.m2/repository/org/easymock/easymock/3.1/easymock-3.1.jar:/Users/abrahamabdulkarim/.m2/repository/cglib/cglib-nodep/2.2.2/cglib-nodep-2.2.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:/Users/abrahamabdulkarim/.m2/repository/org/slf4j/slf4j-jdk14/1.6.1/slf4j-jdk14-1.6.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/abrahamabdulkarim"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email/target/surefire/surefirebooter-20250406224640598_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="abrahamabdulkarim"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/abrahamabdulkarim/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/_f/cssy8v2d0cz87s4w1ls7_p280000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/abrahamabdulkarim/Documents/code/testci-common-email"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/abrahamabdulkarim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testAddBccEmpty" classname="org.apache.commons.mail.EmailTest" time="0.004"/>
+  <testcase name="testbuildMimeMessageToNull" classname="org.apache.commons.mail.EmailTest" time="0.039"/>
+  <testcase name="testgetHostNameNull" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSessionSocketTimeoutGT0" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionSocketTimeoutLT0" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessageContentNull" classname="org.apache.commons.mail.EmailTest" time="0.005"/>
+  <testcase name="testbuildMimeMessageBuildTwice" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddCc_ValidEmail" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSessionSocketConnectionTimeoutGT0" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionSocketConnectionTimeoutLT0" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionPartial" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSessionNull" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionNullHostNameNull" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSessionBounce" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddHeaderEmptyValue" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testgetHostNameNotNull" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testbuildMimeMessageMultipleTo" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testbuildMimeMessageCcs" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionSSLCheckServerIdentity" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testAddHeaderValid" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddHeaderEmptyName" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessageSubjectValidCharsetNull" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddCc_ValidEmailList" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testAddBccNULL" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testBuildMimeMessageValid" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testgetSentDate" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessageHeaders" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddReplyToValid" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testgetHostNameValid" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessageFromNull" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessageReplyTo" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionSSLTrue" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testgetSentDateNull" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testSetFrom" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testAddBcc_ValidEmail" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testAddCcEmpty" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testbuildMimeMessagePopBeforeSMTP" classname="org.apache.commons.mail.EmailTest" time="0.033"/>
+  <testcase name="testAddCc_NULL" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testgetSocketConnectionTimeout" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSessionTLSTrue" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testbuildMimeMessageBccs" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testGetMailSessionValid" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+</testsuite>
